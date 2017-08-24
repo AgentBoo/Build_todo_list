@@ -1,0 +1,62 @@
+body{
+  background-color: #ffcf23;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin: 0 auto;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+.c-wrap{
+  margin: 50px;
+  padding: 17.5px;
+  width: 679px;
+}
+
+.s-wrap{
+  background-color: #ffd647;
+  border-radius: 10px;
+}
+
+form{
+  font-size: 14px;
+  margin: 22px auto;
+}
+
+.inputField{
+  border-radius: 20px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin: 5px 0;
+  outline-color: #ffd647;
+  padding: 5px;
+}
+
+.f-todoList h3{
+  border-bottom: solid black 2px;
+}
+
+.btnSubmit{
+  background-color: #00b5ce;
+  border-radius: 20px;
+  border-color: #00b5ce;
+  color: white;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin: 5px 20px;
+  outline-color: #ffd647;
+}
+
+.btnGen{
+  background-color: white;
+    opacity: 0.8;
+  border-radius: 20px;
+  border-color: white;
+  font-family: 'Baloo Bhaijaan', cursive;
+  float: right;
+  margin: 0 5px;
+}
+
+.f-complete h3{
+  color: #00b5ce;
+  border-bottom: solid #00b5ce 2px;
+}

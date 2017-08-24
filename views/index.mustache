@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> To Do </title>
+    <link rel="stylesheet" href="./public/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="c-wrap s-wrap">
+      <header>
+        <h1> TO DO list </h1>
+      </header>
+
+      <form method="POST">
+        <div>
+          <input type="text" name="todo" id="todo" placeholder="Add TO DOs" class="inputField">
+          <button formaction="/" type="submit" name="btnSubmit" id="btnSubmit" value="submit" class="btnSubmit"> Add </button>
+        </div>
+
+        <div class="f-todoList">
+          <h3> TO DO </h3>
+          {{#todo}}
+            <p>
+              {{.}}
+                <button formaction="/" type="submit" name="btnDelete" id="btnDelete" value={{.}} class="btnGen"> Delete </button>
+                <button formaction="/" type="submit" name="btnMark" id="btnMark" value={{.}} class="btnGen btnMark"> Mark As Complete </button>
+              <!-- <button formaction="/" type="submit" name="btnDelete" id="btnDelete" value={{.}} class="btnGen"> Delete </button> -->
+            </p>
+          {{/todo}}
+          <!--
+          <p> Wake up </p>
+          <p> Brush teeth </p>
+          <p> Tell Verca she is nuts </p>
+          <p> Tell Lukas he is not nearly as butts as Verca </p>
+          -->
+        </div>
+
+        <div class="f-complete">
+          <h3> Complete </h3>
+          {{#complete}}
+            <p>
+              {{.}}
+                <button formaction="/" type="submit" name="complDelete" id="btnDelete" value={{.}} class="btnGen"> Delete </button>
+            </p>
+          {{/complete}}
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
